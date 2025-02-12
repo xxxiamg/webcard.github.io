@@ -17,40 +17,72 @@ html {
 
 /* Контейнер с текстом */
 .container {
-    margin: 15px;
+    margin: 1px;
     cursor: pointer;
 }
 
 .text {
-    font-size: 54px;
+    font-size: 77px;
     font-family: Arial, sans-serif;
     text-align: left;
     /* Выравнивание текста по левому краю */
-    line-height: 1;
+    line-height: 0.9;
 }
 
 .text div {
     display: block;
-    transition: transform 7s ease;
+    transition: transform 100s ease;
 }
 
 /* Анимация пульсации */
 @keyframes pulse {
     0% {
-        transform: scale(1);
+        transform: scale(0.9);
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(0.99);
         /* Увеличение текста */
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(0.9);
     }
 }
 
 .pulse-effect {
-    animation: pulse 7s ease-in-out infinite;
+    animation: pulse 20s ease-in-out infinite;
     /* Бесконечная анимация пульсации */
+}
+
+.link-container {
+    position: fixed;
+    /* Фиксированное позиционирование */
+    bottom: 10px;
+    /* Отступ снизу */
+    left: 5px;
+    /* Отступ слева */
+    z-index: 1000;
+    /* Чтобы ссылка была поверх других элементов */
+}
+
+.wind-link {
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    font-size: 18px;
+    /* Размер текста */
+    font-family: Arial, sans-serif;
+    /* Шрифт */
+    color: #007BFF;
+    /* Цвет текста */
+    background-color: #f0f0f0;
+    /* Фон */
+    padding: 10px 15px;
+    /* Отступы внутри */
+    border-radius: 5px;
+    /* Закругленные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Тень */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Плавные переходы */
 }
