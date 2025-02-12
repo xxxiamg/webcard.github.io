@@ -1,0 +1,56 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* Выравнивание по левому краю */
+    align-items: flex-start;
+    background-color: #f0f0f0;
+}
+
+/* Контейнер с текстом */
+.container {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 54px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    /* Выравнивание текста по левому краю */
+    line-height: 1;
+}
+
+.text div {
+    display: block;
+    transition: transform 7s ease;
+}
+
+/* Анимация пульсации */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        /* Увеличение текста */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse-effect {
+    animation: pulse 7s ease-in-out infinite;
+    /* Бесконечная анимация пульсации */
+}
