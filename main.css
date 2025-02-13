@@ -22,7 +22,7 @@ html {
 }
 
 .text {
-    font-size: 54px;
+    font-size: 66px;
     font-family: Arial, sans-serif;
     text-align: left;
     /* Выравнивание текста по левому краю */
@@ -37,16 +37,16 @@ html {
 /* Анимация пульсации */
 @keyframes pulse {
     0% {
-        transform: scale(0.9);
+        transform: scale(1);
     }
 
     50% {
-        transform: scale(0.99);
+        transform: scale(1.1);
         /* Увеличение текста */
     }
 
     100% {
-        transform: scale(0.9);
+        transform: scale(1);
     }
 }
 
@@ -58,9 +58,9 @@ html {
 .link-container {
     position: fixed;
     /* Фиксированное позиционирование */
-    bottom: 10px;
+    bottom: 15px;
     /* Отступ снизу */
-    left: 5px;
+    left: 10px;
     /* Отступ слева */
     z-index: 1000;
     /* Чтобы ссылка была поверх других элементов */
@@ -69,7 +69,7 @@ html {
 .wind-link {
     text-decoration: none;
     /* Убираем подчеркивание */
-    font-size: 18px;
+    font-size: 20px;
     /* Размер текста */
     font-family: Arial, sans-serif;
     /* Шрифт */
@@ -105,7 +105,7 @@ html {
 /* Для устройств с шириной экрана меньше 480px (маленькие мобильные устройства, например, iPhone 8) */
 @media (max-width: 480px) {
     .text {
-        font-size: 64px;
+        font-size: 10px;
         /* Еще больше уменьшаем размер шрифта */
     }
 
