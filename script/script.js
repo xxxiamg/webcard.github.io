@@ -23,16 +23,3 @@ document.getElementById('text').addEventListener('click', function () {
         }, text.length * 100 + 500); // Время для завершения анимации
     });
 });
-
-// Добавляем пульсацию текста
-const textElement = document.getElementById('text');
-textElement.classList.add('pulse-effect'); // Добавляем класс с анимацией пульсации
-
-// Останавливаем пульсацию при наведении (опционально)
-textElement.addEventListener('mouseenter', () => {
-    textElement.classList.remove('pulse-effect');
-});
-
-textElement.addEventListener('mouseleave', () => {
-    textElement.classList.add('pulse-effect');
-});
