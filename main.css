@@ -37,16 +37,16 @@ html {
 /* Анимация пульсации */
 @keyframes pulse {
     0% {
-        transform: scale(1);
+        transform: scale(0.9);
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(1);
         /* Увеличение текста */
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(0.9);
     }
 }
 
@@ -105,7 +105,7 @@ html {
 /* Для устройств с шириной экрана меньше 480px (маленькие мобильные устройства, например, iPhone 8) */
 @media (max-width: 480px) {
     .text {
-        font-size: 64px;
+        font-size: 70px;
         /* Еще больше уменьшаем размер шрифта */
     }
 
