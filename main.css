@@ -17,12 +17,12 @@ html {
 
 /* Контейнер с текстом */
 .container {
-    margin: 1px;
+    margin: 20px;
     cursor: pointer;
 }
 
 .text {
-    font-size: 77px;
+    font-size: 54px;
     font-family: Arial, sans-serif;
     text-align: left;
     /* Выравнивание текста по левому краю */
@@ -85,4 +85,32 @@ html {
     /* Тень */
     transition: background-color 0.3s ease, color 0.3s ease;
     /* Плавные переходы */
+}
+
+/* Медиа-запросы для адаптации под разные устройства */
+
+/* Для устройств с шириной экрана меньше 768px (мобильные устройства) */
+@media (max-width: 768px) {
+    .text {
+        font-size: 32px;
+        /* Уменьшаем размер шрифта */
+    }
+
+    .container {
+        margin: 10px;
+        /* Уменьшаем отступы */
+    }
+}
+
+/* Для устройств с шириной экрана меньше 480px (маленькие мобильные устройства, например, iPhone 8) */
+@media (max-width: 480px) {
+    .text {
+        font-size: 24px;
+        /* Еще больше уменьшаем размер шрифта */
+    }
+
+    .container {
+        margin: 5px;
+        /* Еще меньше отступов */
+    }
 }
