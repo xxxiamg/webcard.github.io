@@ -51,7 +51,7 @@ html {
 }
 
 .pulse-effect {
-    animation: pulse 20s ease-in-out infinite;
+    animation: pulse 15s ease-in-out infinite;
     /* Бесконечная анимация пульсации */
 }
 
@@ -92,7 +92,7 @@ html {
 /* Для устройств с шириной экрана меньше 768px (мобильные устройства) */
 @media (max-width: 768px) {
     .text {
-        font-size: 32px;
+        font-size: 42px;
         /* Уменьшаем размер шрифта */
     }
 
@@ -105,7 +105,7 @@ html {
 /* Для устройств с шириной экрана меньше 480px (маленькие мобильные устройства, например, iPhone 8) */
 @media (max-width: 480px) {
     .text {
-        font-size: 24px;
+        font-size: 64px;
         /* Еще больше уменьшаем размер шрифта */
     }
 
