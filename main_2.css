@@ -55,3 +55,63 @@ body {
     color: #fff;
     cursor: pointer;
 }
+
+/* Стили для кнопки "Назад" */
+.back-button {
+    position: fixed;
+    /* Фиксированное позиционирование */
+    top: 20px;
+    /* Отступ сверху */
+    left: 20px;
+    /* Отступ слева */
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    font-size: 24px;
+    /* Размер текста */
+    font-family: Arial, sans-serif;
+    /* Шрифт */
+    color: #000;
+    /* Цвет текста */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Полупрозрачный белый фон */
+    padding: 10px 15px;
+    /* Отступы внутри */
+    border-radius: 50%;
+    /* Круглая форма */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Тень */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Плавные переходы */
+    z-index: 1000;
+    /* Чтобы кнопка была поверх других элементов */
+}
+
+/* Эффект перелива (блика) */
+.back-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0.4) 25%,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(255, 255, 255, 0.4) 75%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.back-button:hover::after {
+    opacity: 1;
+    /* Показываем блик при наведении */
+}
+
+/* Эффект при наведении */
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    /* Убираем прозрачность фона */
+    transform: scale(1.1);
+    /* Увеличиваем кнопку */
+}

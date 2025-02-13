@@ -17,12 +17,12 @@ html {
 
 /* Контейнер с текстом */
 .container {
-    margin: 20px;
+    margin: 0px;
     cursor: pointer;
 }
 
 .text {
-    font-size: 66px;
+    font-size: 80px;
     font-family: Arial, sans-serif;
     text-align: left;
     /* Выравнивание текста по левому краю */
@@ -51,7 +51,7 @@ html {
 }
 
 .pulse-effect {
-    animation: pulse 15s ease-in-out infinite;
+    animation: pulse 14s ease-in-out infinite;
     /* Бесконечная анимация пульсации */
 }
 
